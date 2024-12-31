@@ -8,8 +8,7 @@ const nextConfig = {
     unoptimized: true,
   },
   // Configure base path and asset prefix for GitHub Pages
-  basePath: isProduction ? `/${repositoryName}` : '',
-  assetPrefix: isProduction ? `/${repositoryName}/` : '/',
+  
   trailingSlash: true,
 }
 
