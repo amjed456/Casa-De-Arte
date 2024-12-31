@@ -3,7 +3,7 @@
   "trailingSlash": true,
   "headers": [
     {
-      "source": "/Casa-De-Arte/images/(.*)",
+      "source": "/images/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
