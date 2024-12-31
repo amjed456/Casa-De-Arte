@@ -4,9 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '',
-  assetPrefix: 'https://casa-de-arte.vercel.app',
+  basePath: '/Casa-De-Arte', // Add your repository name here
+  assetPrefix: '/Casa-De-Arte/', // Add your repository name with trailing slash
   trailingSlash: true,
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig
