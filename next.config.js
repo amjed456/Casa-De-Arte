@@ -5,8 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Update assetPrefix to start with a leading slash
-  assetPrefix: '/',
+  assetPrefix: 'https://casa-de-arte.vercel.app',
   basePath: '',
 }
 
