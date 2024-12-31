@@ -34,7 +34,7 @@ export default function ClientPortraitDetails({
         {/* Navigation Buttons */}
         <div className="max-w-7xl mx-auto mb-12 flex flex-wrap gap-4 justify-between items-center">
           <button
-            onClick={() => router.push('/')}
+            onClick={() => router.push('/Casa-De-Arte')}
             className="group flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
           >
             <svg 
@@ -50,7 +50,7 @@ export default function ClientPortraitDetails({
           </button>
 
           <button
-            onClick={() => router.push('/portraits-gallery')}
+            onClick={() => router.push('/Casa-De-Arte/portraits-gallery')}
             className="group flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
           >
             View All Portraits
