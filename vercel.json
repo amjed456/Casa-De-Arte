@@ -1,7 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true,
-  "images": {
-    "domains": ["casa-de-arte.vercel.app"]
-  }
+  "trailingSlash": true
 } 
