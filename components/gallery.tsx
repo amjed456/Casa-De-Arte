@@ -12,6 +12,7 @@ const swingingAnimation = `
 `
 const CLOUDINARY_URL = "https://res.cloudinary.com/dpriignbf/image/upload";
 
+// used cloudinary  to save images
 export default function Gallery() {
   const galleryItems = [
     { src: `${CLOUDINARY_URL}/v1735835307/kitten.jpg`, alt: "Cat artwork in bedroom setting", price: "$299", size: "16\" x 20\"" },
