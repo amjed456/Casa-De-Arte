@@ -3,14 +3,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = localFont({
-  src: "../public/fonts/GeistVF.woff",
+  src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
   preload: true,
   display: 'swap'
 });
 const geistMono = localFont({
-  src: "../public/fonts/GeistMonoVF.woff",
+  src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
   preload: true,
@@ -33,14 +33,14 @@ export default function RootLayout({
         <base href="/Casa-De-Arte/" />
         <link
           rel="preload"
-          href="/Casa-De-Arte/fonts/GeistVF.woff"
+          href="fonts/GeistVF.woff"
           as="font"
           type="font/woff"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/Casa-De-Arte/fonts/GeistMonoVF.woff"
+          href="fonts/GeistMonoVF.woff"
           as="font"
           type="font/woff"
           crossOrigin="anonymous"
