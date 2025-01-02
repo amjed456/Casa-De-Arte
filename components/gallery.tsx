@@ -10,26 +10,27 @@ const swingingAnimation = `
     100% { transform: rotate(-1deg); }
   }
 `
+const GITHUB_URL = 'https://github.com/amjed456/Casa-De-Arte/tree/main/Public';
 
 export default function Gallery() {
   const galleryItems = [
-    { src: "casa-de-arte/images/kitten.jpg", alt: "Cat artwork in bedroom setting", price: "$299", size: "16\" x 20\"" },
-    { src: "casa-de-arte/images/cafe.jpg", alt: "Modern bar with wooden slat wall", price: "$349", size: "20\" x 24\"" },
-    { src: "casa-de-arte/images/hotel.jpg", alt: "Classic interior with striped wallpaper", price: "$399", size: "24\" x 36\"" },
-    { src: "casa-de-arte/images/bar.jpg", alt: "Corner with bar stools", price: "$299", size: "16\" x 20\"" },
-    { src: "casa-de-arte/images/pew.jpg", alt: "Minimalist gallery wall", price: "$449", size: "30\" x 40\"" },
-    { src: "casa-de-arte/images/shapes.jpg", alt: "Living space with abstract art", price: "$379", size: "24\" x 30\"" },
-    { src: "casa-de-arte/images/plants.jpg", alt: "Living room with leaf prints", price: "$329", size: "20\" x 24\"" },
-    { src: "casa-de-arte/images/nature.jpg", alt: "Modern living room with landscape triptych", price: "$499", size: "36\" x 48\"" },
-    { src: "casa-de-arte/images/cartier.jpg", alt: "Cat artwork variation 2", price: "$319", size: "16\" x 20\"" },
-    { src: "casa-de-arte/images/coffee.jpg", alt: "Modern bar variation 2", price: "$369", size: "20\" x 24\"" },
-    { src: "casa-de-arte/images/horse1.jpg", alt: "Classic interior variation 2", price: "$419", size: "24\" x 36\"" },
-    { src: "casa-de-arte/images/horse2.jpg", alt: "Corner view variation 2", price: "$289", size: "16\" x 20\"" },
-    { src: "casa-de-arte/images/horse3.jpg", alt: "Gallery wall variation 2", price: "$469", size: "30\" x 40\"" },
-    { src: "casa-de-arte/images/kitchen.jpg", alt: "Abstract art variation 2", price: "$359", size: "24\" x 30\"" },
-    { src: "casa-de-arte/images/religeon.jpg", alt: "Leaf prints variation 2", price: "$339", size: "20\" x 24\"" },
-    { src: "casa-de-arte/images/croissant.jpg", alt: "Landscape variation 2", price: "$519", size: "36\" x 48\"" },
-    { src: "casa-de-arte/images/chai.jpg", alt: "Final masterpiece", price: "$599", size: "40\" x 60\"" },
+    { src: `${GITHUB_URL}/images/kitten.jpg`, alt: "Cat artwork in bedroom setting", price: "$299", size: "16\" x 20\"" },
+    { src: `${GITHUB_URL}/images/cafe.jpg`, alt: "Modern bar with wooden slat wall", price: "$349", size: "20\" x 24\"" },
+    { src: `${GITHUB_URL}/images/hotel.jpg`, alt: "Classic interior with striped wallpaper", price: "$399", size: "24\" x 36\"" },
+    { src: `${GITHUB_URL}/images/bar.jpg`, alt: "Corner with bar stools", price: "$299", size: "16\" x 20\"" },
+    { src: `${GITHUB_URL}/images/pew.jpg`, alt: "Minimalist gallery wall", price: "$449", size: "30\" x 40\"" },
+    { src: `${GITHUB_URL}/images/shapes.jpg`, alt: "Living space with abstract art", price: "$379", size: "24\" x 30\"" },
+    { src: `${GITHUB_URL}/images/plants.jpg`, alt: "Living room with leaf prints", price: "$329", size: "20\" x 24\"" },
+    { src: `${GITHUB_URL}/images/nature.jpg`, alt: "Modern living room with landscape triptych", price: "$499", size: "36\" x 48\"" },
+    { src: `${GITHUB_URL}/images/cartier.jpg`, alt: "Cat artwork variation 2", price: "$319", size: "16\" x 20\"" },
+    { src: `${GITHUB_URL}/images/coffee.jpg`, alt: "Modern bar variation 2", price: "$369", size: "20\" x 24\"" },
+    { src: `${GITHUB_URL}/images/horse1.jpg`, alt: "Classic interior variation 2", price: "$419", size: "24\" x 36\"" },
+    { src: `${GITHUB_URL}/images/horse2.jpg`, alt: "Corner view variation 2", price: "$289", size: "16\" x 20\"" },
+    { src: `${GITHUB_URL}/images/horse3.jpg`, alt: "Gallery wall variation 2", price: "$469", size: "30\" x 40\"" },
+    { src: `${GITHUB_URL}/images/kitchen.jpg`, alt: "Abstract art variation 2", price: "$359", size: "24\" x 30\"" },
+    { src: `${GITHUB_URL}/images/religeon.jpg`, alt: "Leaf prints variation 2", price: "$339", size: "20\" x 24\"" },
+    { src: `${GITHUB_URL}/images/croissant.jpg`, alt: "Landscape variation 2", price: "$519", size: "36\" x 48\"" },
+    { src: `${GITHUB_URL}/images/chai.jpg`, alt: "Final masterpiece", price: "$599", size: "40\" x 60\"" },
   ]
 
   return (
