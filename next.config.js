@@ -4,16 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,
   basePath: '/Casa-De-Arte',
-  assetPrefix: '/Casa-De-Arte',
-  transpilePackages: ['next'],
-  experimental: {
-    optimizeFonts: true,
-  },
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false };
-    return config;
-  },
+  assetPrefix: '/Casa-De-Arte/',
 }
 
 module.exports = nextConfig

@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add the swinging animation globally */
-@keyframes swing {
-  0% { transform: rotate(-1deg); }
-  50% { transform: rotate(1deg); }
-  100% { transform: rotate(-1deg); }
-}
-
-/* Use Google Font */
 body {
-  font-family: 'Geist', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
