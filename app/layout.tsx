@@ -1,33 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter, Space_Mono } from 'next/font/google';
 import "./globals.css";
 
-const geistSans = localFont({
-  src: [
-    {
-      path: './fonts/GeistVF.woff',
-      weight: '100 900',
-      style: 'normal',
-    }
-  ],
-  variable: "--font-geist-sans",
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-geist-sans',
   display: 'swap',
-  fallback: ['system-ui', 'arial'],
-  adjustFontFallback: false,
 });
 
-const geistMono = localFont({
-  src: [
-    {
-      path: './fonts/GeistMonoVF.woff',
-      weight: '100 900',
-      style: 'normal',
-    }
-  ],
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-geist-mono',
   display: 'swap',
-  fallback: ['monospace'],
-  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -45,7 +30,7 @@ export default function RootLayout({
       <head>
         <base href="/Casa-De-Arte/" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.variable} ${spaceMono.variable} antialiased`}>
         {children}
       </body>
     </html>

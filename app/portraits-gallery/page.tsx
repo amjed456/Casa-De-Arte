@@ -2,14 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 
-
-const swingingAnimation = `
-  @keyframes swing {
-    0% { transform: rotate(-1deg); }
-    50% { transform: rotate(1deg); }
-    100% { transform: rotate(-1deg); }
-  }
-`
+const SWING_DURATIONS = [3, 3.2, 3.4, 3.6, 3.8, 4];
 const CLOUDINARY_URL = "https://res.cloudinary.com/dpriignbf/image/upload";
 
 const galleryItems = [
@@ -32,13 +25,12 @@ const galleryItems = [
   { src: `${CLOUDINARY_URL}/v1735835307/chai.jpg`, alt: "Final masterpiece", price: "$599", size: "40\" x 60\"" },
 ]
 export default function PortraitsGalleryPage() {
-  
+  const getAnimationDuration = (index: number) => {
+    return SWING_DURATIONS[index % SWING_DURATIONS.length];
+  };
 
   return (
     <div className="min-h-screen bg-gradient-radial relative">
-      <style jsx global>{swingingAnimation}</style>
-      
-      {/* Background elements remain the same */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#ffffff,_#f3f4f6_25%,_#e5e7eb_50%,_#d1d5db_75%,_#9ca3af_100%)] animate-gradient-shift" />
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: `url("data:image/png;base64,...")}`}} />
@@ -46,7 +38,6 @@ export default function PortraitsGalleryPage() {
       </div>
 
       <div className="container mx-auto px-4 py-12 relative">
-        {/* Return to Home Button */}
         <div className="max-w-7xl mx-auto mb-12">
           <button
             onClick={() => window.location.href = '/Casa-De-Arte'}
@@ -69,7 +60,6 @@ export default function PortraitsGalleryPage() {
           All Portraits
         </h1>
 
-        {/* Desktop Layout */}
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8">
           {galleryItems.map((item, index) => (
             <Card 
@@ -77,7 +67,7 @@ export default function PortraitsGalleryPage() {
               className="group transform transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl bg-white relative"
               style={{
                 boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                animation: `swing ${3 + Math.random() * 2}s ease-in-out infinite`,
+                animation: `swing ${getAnimationDuration(index)}s ease-in-out infinite`,
                 transformOrigin: "50% -20px"
               }}
             >
@@ -107,7 +97,6 @@ export default function PortraitsGalleryPage() {
           ))}
         </div>
 
-        {/* Mobile Layout */}
         <div className="grid md:hidden grid-cols-2 gap-4">
           {galleryItems.map((item, index) => (
             <Card 
@@ -115,7 +104,7 @@ export default function PortraitsGalleryPage() {
               className="group transform transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl bg-white relative"
               style={{
                 boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                animation: `swing ${3 + Math.random() * 2}s ease-in-out infinite`,
+                animation: `swing ${getAnimationDuration(index)}s ease-in-out infinite`,
                 transformOrigin: "50% -20px"
               }}
             >
