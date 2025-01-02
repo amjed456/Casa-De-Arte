@@ -6,6 +6,14 @@ const nextConfig = {
   },
   basePath: '/casa-de-arte',
   assetPrefix: '/casa-de-arte',
+  trailingSlash: true,
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': '.',
+    }
+    return config
+  },
 }
 
 module.exports = nextConfig
