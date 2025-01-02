@@ -12,7 +12,7 @@ const swingingAnimation = `
 `
 
 const galleryItems = [
-  { src: "/images/kitten.jpeg", alt: "Cat artwork in bedroom setting", price: "$299", size: "16\" x 20\"" },
+  { src: "../images/kitten.jpeg", alt: "Cat artwork in bedroom setting", price: "$299", size: "16\" x 20\"" },
   { src: "/images/cafe.jpeg", alt: "Modern bar with wooden slat wall", price: "$349", size: "20\" x 24\"" },
   { src: "/images/hotel.jpeg", alt: "Classic interior with striped wallpaper", price: "$399", size: "24\" x 36\"" },
   { src: "/images/bar.jpeg", alt: "Corner with bar stools", price: "$299", size: "16\" x 20\"" },
