@@ -1,32 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { geistSans, geistMono } from "./fonts";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: [
-    {
-      path: './fonts/GeistVF.woff',
-      weight: '100 900',
-      style: 'normal',
-    }
-  ],
-  variable: "--font-geist-sans",
-  preload: true,
-  display: 'swap',
-});
-
-const geistMono = localFont({
-  src: [
-    {
-      path: './fonts/GeistMonoVF.woff',
-      weight: '100 900',
-      style: 'normal',
-    }
-  ],
-  variable: "--font-geist-mono",
-  preload: true,
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: "Casa De Arte",

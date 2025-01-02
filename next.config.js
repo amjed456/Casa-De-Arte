@@ -6,13 +6,10 @@ const nextConfig = {
   },
   basePath: '/Casa-De-Arte',
   assetPrefix: '/Casa-De-Arte',
-  experimental: {
-    appDir: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
   },
-  distDir: '.next',
-  generateBuildId: async () => {
-    return 'build'
-  }
 }
 
 module.exports = nextConfig
