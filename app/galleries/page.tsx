@@ -10,7 +10,7 @@ const swingingAnimation = `
     100% { transform: rotate(-1deg); }
   }
 `
-
+{/* images hosting hehe */}
 const CLOUDINARY_URL = "https://res.cloudinary.com/dpriignbf/image/upload";
 
 const galleryItems = [
