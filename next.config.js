@@ -5,8 +5,9 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/casa-de-arte',
-  assetPrefix: '/casa-de-arte',
+  assetPrefix: '',
   trailingSlash: true,
+  distDir: 'out',
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
