@@ -7,7 +7,6 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
   preload: true,
-  adjustFontFallback: true,
   display: 'swap'
 });
 const geistMono = localFont({
@@ -15,7 +14,6 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
   preload: true,
-  adjustFontFallback: true,
   display: 'swap'
 });
 
