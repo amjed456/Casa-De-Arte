@@ -34,7 +34,7 @@ export default function ClientPortraitDetails({
         {/* Navigation Buttons */}
         <div className="max-w-7xl mx-auto mb-12 flex flex-wrap gap-4 justify-between items-center">
           <button
-            onClick={() => window.location.href = '/Casa-De-Arte'}
+            onClick={() => window.location.href = '/casa-de-arte'}
             className="group flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
           >
             <svg 
@@ -50,7 +50,7 @@ export default function ClientPortraitDetails({
           </button>
 
           <button
-            onClick={() => window.location.href = '/Casa-De-Arte/portraits-gallery'}
+            onClick={() => window.location.href = '/casa-de-arte/portraits-gallery'}
             className="group flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
           >
             View All Portraits
@@ -96,7 +96,7 @@ export default function ClientPortraitDetails({
               <Card 
                 key={index}
                 className="cursor-pointer transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl bg-white relative"
-                onClick={() => window.location.href = `/Casa-De-Arte/portraits/${index}`}
+                onClick={() => window.location.href = `/casa-de-arte/portraits/${index}`}
                 style={{
                   boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                   animation: `swing ${3 + Math.random() * 2}s ease-in-out infinite`,

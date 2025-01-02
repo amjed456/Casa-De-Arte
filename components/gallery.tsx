@@ -88,7 +88,7 @@ export default function Gallery() {
                     <p className="text-lg font-semibold text-gray-800">{item.price}</p>
                     <p className="text-sm text-gray-600">{item.size}</p>
                     <button
-                      onClick={() => window.location.href = `/Casa-De-Arte/portraits/${index}`}
+                      onClick={() => window.location.href = `/casa-de-arte/portraits/${index}`}
                       className="mt-3 px-6 py-2 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
                     >
                       View Details
@@ -126,7 +126,7 @@ export default function Gallery() {
                     <p className="text-lg font-semibold text-gray-800">{item.price}</p>
                     <p className="text-sm text-gray-600">{item.size}</p>
                     <button
-                      onClick={() => window.location.href = `/Casa-De-Arte/portraits/${index + 4}`}
+                      onClick={() => window.location.href = `/casa-de-arte/portraits/${index + 4}`}
                       className="mt-3 px-6 py-2 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
                     >
                       View Details
@@ -140,7 +140,7 @@ export default function Gallery() {
           {/* View All Portraits button */}
           <div className="text-center">
             <button
-              onClick={() => window.location.href = `/Casa-De-Arte/portraits-gallery`}
+              onClick={() => window.location.href = '/casa-de-arte/portraits-gallery'}
               className="group px-8 py-4 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-lg"
             >
               View All Portraits
@@ -177,7 +177,7 @@ export default function Gallery() {
                     <p className="text-base font-semibold text-gray-800">{item.price}</p>
                     <p className="text-xs text-gray-600">{item.size}</p>
                     <button
-                      onClick={() => window.location.href = `/Casa-De-Arte/portraits/${index}`}
+                      onClick={() => window.location.href = `/casa-de-arte/portraits/${index}`}
                       className="mt-2 px-4 py-1.5 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-sm w-full"
                     >
                       View Details
@@ -215,7 +215,7 @@ export default function Gallery() {
                     <p className="text-base font-semibold text-gray-800">{item.price}</p>
                     <p className="text-xs text-gray-600">{item.size}</p>
                     <button
-                      onClick={() => window.location.href = `/Casa-De-Arte/portraits/${index + 4}`}
+                      onClick={() => window.location.href = `/casa-de-arte/portraits/${index + 4}`}
                       className="mt-2 px-4 py-1.5 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-sm w-full"
                     >
                       View Details
@@ -229,7 +229,7 @@ export default function Gallery() {
           {/* View All Portraits button */}
           <div className="text-center">
             <button
-              onClick={() => window.location.href = `/Casa-De-Arte/portraits-gallery`}
+              onClick={() => window.location.href = '/casa-de-arte/portraits-gallery'}
               className="group px-6 py-3 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-base"
             >
               View All Portraits

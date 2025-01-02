@@ -4,9 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
-  basePath: '/Casa-De-Arte',
-  assetPrefix: '/Casa-De-Arte/',
+  basePath: '/casa-de-arte',
+  assetPrefix: '/casa-de-arte',
 }
 
 module.exports = nextConfig
