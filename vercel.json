@@ -1,4 +1,7 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/Casa-De-Arte/:path*", "destination": "/:path*" }
+  ]
 } 

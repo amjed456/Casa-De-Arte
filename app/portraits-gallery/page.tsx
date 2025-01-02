@@ -49,7 +49,7 @@ export default function PortraitsGalleryPage() {
         {/* Return to Home Button */}
         <div className="max-w-7xl mx-auto mb-12">
           <button
-            onClick={() => window.location.href = '/'}
+            onClick={() => window.location.href = '/Casa-De-Arte'}
             className="group flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
           >
             <svg 
@@ -96,7 +96,7 @@ export default function PortraitsGalleryPage() {
                   <p className="text-lg font-semibold text-gray-800">{item.price}</p>
                   <p className="text-sm text-gray-600">{item.size}</p>
                   <button
-                    onClick={() => window.location.href = `/portraits/${index}`}
+                    onClick={() => window.location.href = `/Casa-De-Arte/portraits/${index}`}
                     className="mt-3 px-6 py-2 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
                   >
                     View Details
@@ -134,7 +134,7 @@ export default function PortraitsGalleryPage() {
                   <p className="text-base font-semibold text-gray-800">{item.price}</p>
                   <p className="text-xs text-gray-600">{item.size}</p>
                   <button
-                    onClick={() => window.location.href = `/portraits/${index}`}
+                    onClick={() => window.location.href = `/Casa-De-Arte/portraits/${index}`}
                     className="mt-2 px-4 py-1.5 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-sm w-full"
                   >
                     View Details
