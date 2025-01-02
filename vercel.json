@@ -1,10 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
-  "routes": [
-    {
-      "src": "/Casa-De-Arte/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "out"
 } 
