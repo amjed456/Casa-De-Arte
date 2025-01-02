@@ -6,6 +6,13 @@ const nextConfig = {
   },
   basePath: '/Casa-De-Arte',
   assetPrefix: '/Casa-De-Arte',
+  experimental: {
+    appDir: true,
+  },
+  distDir: '.next',
+  generateBuildId: async () => {
+    return 'build'
+  }
 }
 
 module.exports = nextConfig
