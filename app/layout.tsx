@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Space_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import "./globals.css";
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-geist-sans',
-  display: 'swap',
-});
-
-const spaceMono = Space_Mono({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-geist-mono',
   display: 'swap',
 });
 
@@ -29,8 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <base href="/Casa-De-Arte/" />
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
       </head>
-      <body className={`${inter.variable} ${spaceMono.variable} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         {children}
       </body>
     </html>

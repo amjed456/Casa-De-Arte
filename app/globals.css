@@ -9,8 +9,9 @@
   100% { transform: rotate(-1deg); }
 }
 
+/* Use Google Font */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Geist', sans-serif;
 }
 
 @layer utilities {
