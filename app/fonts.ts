@@ -1,15 +1,29 @@
 import localFont from "next/font/local";
 
 export const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
+  src: [
+    {
+      path: './fonts/GeistVF.woff',
+      weight: '100 900',
+      style: 'normal',
+    }
+  ],
   variable: "--font-geist-sans",
-  preload: true,
-  display: 'block',  // Only affects font loading behavior
+  display: 'swap',
+  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: false,
 });
 
 export const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
+  src: [
+    {
+      path: './fonts/GeistMonoVF.woff',
+      weight: '100 900',
+      style: 'normal',
+    }
+  ],
   variable: "--font-geist-mono",
-  preload: true,
-  display: 'block',  // Only affects font loading behavior
+  display: 'swap',
+  fallback: ['monospace'],
+  adjustFontFallback: false,
 }); 
