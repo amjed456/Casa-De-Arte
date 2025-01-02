@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { useRouter } from "next/navigation"
+
 
 const swingingAnimation = `
   @keyframes swing {
@@ -10,28 +10,29 @@ const swingingAnimation = `
     100% { transform: rotate(-1deg); }
   }
 `
+const CLOUDINARY_URL = "https://res.cloudinary.com/dpriignbf/image/upload";
 
 const galleryItems = [
-  { src: "casa-de-arte/images/kitten.jpg", alt: "Cat artwork in bedroom setting", price: "$299", size: "16\" x 20\"" },
-  { src: "casa-de-arte/images/cafe.jpg", alt: "Modern bar with wooden slat wall", price: "$349", size: "20\" x 24\"" },
-  { src: "casa-de-arte/images/hotel.jpg", alt: "Classic interior with striped wallpaper", price: "$399", size: "24\" x 36\"" },
-  { src: "casa-de-arte/images/bar.jpg", alt: "Corner with bar stools", price: "$299", size: "16\" x 20\"" },
-  { src: "casa-de-arte/images/pew.jpg", alt: "Minimalist gallery wall", price: "$449", size: "30\" x 40\"" },
-  { src: "casa-de-arte/images/shapes.jpg", alt: "Living space with abstract art", price: "$379", size: "24\" x 30\"" },
-  { src: "casa-de-arte/images/plants.jpg", alt: "Living room with leaf prints", price: "$329", size: "20\" x 24\"" },
-  { src: "casa-de-arte/images/nature.jpg", alt: "Modern living room with landscape triptych", price: "$499", size: "36\" x 48\"" },
-  { src: "casa-de-arte/images/cartier.jpg", alt: "Cat artwork variation 2", price: "$319", size: "16\" x 20\"" },
-  { src: "casa-de-arte/images/coffee.jpg", alt: "Modern bar variation 2", price: "$369", size: "20\" x 24\"" },
-  { src: "casa-de-arte/images/horse1.jpg", alt: "Classic interior variation 2", price: "$419", size: "24\" x 36\"" },
-  { src: "casa-de-arte/images/horse2.jpg", alt: "Corner view variation 2", price: "$289", size: "16\" x 20\"" },
-  { src: "casa-de-arte/images/horse3.jpg", alt: "Gallery wall variation 2", price: "$469", size: "30\" x 40\"" },
-  { src: "casa-de-arte/images/kitchen.jpg", alt: "Abstract art variation 2", price: "$359", size: "24\" x 30\"" },
-  { src: "casa-de-arte/images/religeon.jpg", alt: "Leaf prints variation 2", price: "$339", size: "20\" x 24\"" },
-  { src: "casa-de-arte/images/croissant.jpg", alt: "Landscape variation 2", price: "$519", size: "36\" x 48\"" },
-  { src: "casa-de-arte/images/chai.jpg", alt: "Final masterpiece", price: "$599", size: "40\" x 60\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/kitten.jpg`, alt: "Cat artwork in bedroom setting", price: "$299", size: "16\" x 20\"" },
+  { src: `${CLOUDINARY_URL}/v1735835306/cafe.jpg`, alt: "Modern bar with wooden slat wall", price: "$349", size: "20\" x 24\"" },
+  { src: `${CLOUDINARY_URL}/v1735835306/hotel.jpg`, alt: "Classic interior with striped wallpaper", price: "$399", size: "24\" x 36\"" },
+  { src: `${CLOUDINARY_URL}/v1735835306/bar.jpg`, alt: "Corner with bar stools", price: "$299", size: "16\" x 20\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/pew.jpg`, alt: "Minimalist gallery wall", price: "$449", size: "30\" x 40\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/shapes.jpg`, alt: "Living space with abstract art", price: "$379", size: "24\" x 30\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/plants.jpg`, alt: "Living room with leaf prints", price: "$329", size: "20\" x 24\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/nature.jpg`, alt: "Modern living room with landscape triptych", price: "$499", size: "36\" x 48\"" },
+  { src: `${CLOUDINARY_URL}/v1735835306/cartier.jpg`, alt: "Cat artwork variation 2", price: "$319", size: "16\" x 20\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/coffee.jpg`, alt: "Modern bar variation 2", price: "$369", size: "20\" x 24\"" },
+  { src: `${CLOUDINARY_URL}/v1735835306/horse1.jpg`, alt: "Classic interior variation 2", price: "$419", size: "24\" x 36\"" },
+  { src: `${CLOUDINARY_URL}/v1735835306/horse2.jpg`, alt: "Corner view variation 2", price: "$289", size: "16\" x 20\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/horse3.jpg`, alt: "Gallery wall variation 2", price: "$469", size: "30\" x 40\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/kitchen.jpg`, alt: "Abstract art variation 2", price: "$359", size: "24\" x 30\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/religeon.jpg`, alt: "Leaf prints variation 2", price: "$339", size: "20\" x 24\"" },
+  { src: `${CLOUDINARY_URL}/v1735835306/croissant.jpg`, alt: "Landscape variation 2", price: "$519", size: "36\" x 48\"" },
+  { src: `${CLOUDINARY_URL}/v1735835307/chai.jpg`, alt: "Final masterpiece", price: "$599", size: "40\" x 60\"" },
 ]
 export default function PortraitsGalleryPage() {
-  const router = useRouter()
+  
 
   return (
     <div className="min-h-screen bg-gradient-radial relative">
@@ -48,7 +49,7 @@ export default function PortraitsGalleryPage() {
         {/* Return to Home Button */}
         <div className="max-w-7xl mx-auto mb-12">
           <button
-            onClick={() => router.push('/')}
+            onClick={() => window.location.href = '/'}
             className="group flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
           >
             <svg 
@@ -95,7 +96,7 @@ export default function PortraitsGalleryPage() {
                   <p className="text-lg font-semibold text-gray-800">{item.price}</p>
                   <p className="text-sm text-gray-600">{item.size}</p>
                   <button
-                    onClick={() => router.push(`/portraits/${index}`)}
+                    onClick={() => window.location.href = `/portraits/${index}`}
                     className="mt-3 px-6 py-2 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
                   >
                     View Details
@@ -133,7 +134,7 @@ export default function PortraitsGalleryPage() {
                   <p className="text-base font-semibold text-gray-800">{item.price}</p>
                   <p className="text-xs text-gray-600">{item.size}</p>
                   <button
-                    onClick={() => router.push(`/portraits/${index}`)}
+                    onClick={() => window.location.href = `/portraits/${index}`}
                     className="mt-2 px-4 py-1.5 bg-gray-800 text-white rounded-md transform transition-all duration-300 hover:bg-gray-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-sm w-full"
                   >
                     View Details
