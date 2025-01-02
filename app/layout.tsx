@@ -3,14 +3,20 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../public/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
+  preload: true,
+  adjustFontFallback: true,
+  display: 'swap'
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../public/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+  preload: true,
+  adjustFontFallback: true,
+  display: 'swap'
 });
 
 export const metadata: Metadata = {
@@ -27,6 +33,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <base href="/Casa-De-Arte/" />
+        <link
+          rel="preload"
+          href="/Casa-De-Arte/fonts/GeistVF.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/Casa-De-Arte/fonts/GeistMonoVF.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
