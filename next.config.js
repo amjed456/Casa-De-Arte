@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
-const isProduction = process.env.NODE_ENV === 'production';
-const repoName = 'casa-de-arte';
-
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: isProduction ? `/${repoName}` : '',
-  assetPrefix: isProduction ? `/${repoName}/` : '/',
+  basePath: '/casa-de-arte',
+  assetPrefix: 'https://amjed456.github.io/casa-de-arte',
   trailingSlash: true,
 }
 
