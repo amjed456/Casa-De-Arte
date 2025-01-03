@@ -1,5 +1,4 @@
 import './globals.css'
-import '../styles/globals.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ 
@@ -19,6 +18,7 @@ export default function RootLayout({
         <link 
           rel="stylesheet" 
           href="/casa-de-arte/styles/globals.css"
+          type="text/css"
         />
       </head>
       <body className={`${inter.className} antialiased bg-background text-foreground`}>
