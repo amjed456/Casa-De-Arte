@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/casa-de-arte',
-  assetPrefix: '.',
+  assetPrefix: '/casa-de-arte',
   trailingSlash: true,
 }
 
